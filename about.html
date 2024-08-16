@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/petify logo.png">
+
+    <title>Pet-ify</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FF4E88;
+            color: #FFDA76;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 36px;
+            color: #FFDA76;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            border-color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #FF8C9E;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: auto;
+            color: #fff;
+        }
+
+        .sidebar-nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar-nav ul li {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #FFDA76;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .sidebar-nav ul li:hover {
+            background-color: #FFDA76;
+            cursor: pointer;
+        }
+
+        .logo img {
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        .content {
+            margin-left: 270px; 
+            padding: 20px;
+        }
+
+        .centered-text {
+            text-align: center;
+            color: #FFDA76; 
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-nav">
+            <div class="logo">
+                <a href="#"><img src="images/title logo.png" alt="Logo" width="150" height="auto"></a>
+            </div>
+            <ul>
+                <li><a href="home.html" style="color: #FF4E88; text-decoration: none;">Home</a></li>
+                <li><a href="sleepy.html" style="color: #FF4E88; text-decoration: none;">Sleepy</a></li>
+                <li><a href="energy.html" style="color: #FF4E88; text-decoration: none;">Energy</a></li>
+                <li><a href="about.html" style="color: #FF4E88; text-decoration: none;">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Pet-ify</h1>
+        <p class="centered-text">This website is by :</p>
+        <p class="centered-text">Cavin >> L1 >> RA2211003010740</p>
+        <p class="centered-text">Hannah >> L1 >> RA2211003010772</p>
+    </div>
+</body>
+</html>
+
